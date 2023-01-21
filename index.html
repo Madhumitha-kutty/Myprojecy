@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <title>
+            FORM
+        </title>
+        <style>
+            body{
+                background-color: aqua;
+                border: 2px;
+                
+                margin-left: 100px;
+                margin-right: 300px;
+   
+            }
+            form{
+                background-color: burlywood;
+            }
+           
+        </style>
+    </head>
+    
+
+        <script>
+                    function myFunction() {
+                      var x = document.getElementById("myInput");
+                      if (x.type === "password") {
+                        x.type = "text";
+                      } else {
+                        x.type = "password";
+                      }
+                    }
+                    </script>
+
+    <body>
+        <h1>WEB</h1>
+        <form action="/action_page.php">
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" ><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" ><br>
+              <label for="phoneno">phonenumber:</label><br>
+                <input type="text" id="phoneno" name="phoneno" ><br>
+                <label for="country">country:</label><br>
+                <input type="text" id="country" name="country" ><br>
+                <label for="email">email:</label><br>
+                <input type="text" id="email" name="email" ><br>
+                <placeholder="username@gmail.com" pattern=".+@mycompany.com"></placeholder>
+                <label for="role">Gender</label><br>
+                <input type="radio" name="gender" value="male"> Male
+               <input type="radio" name="gender" value="female"> Female<br>
+                <label for="DOB">DOB:</label><br>
+                <input type="text" id="DOB" name="DOB" ><br>
+            <label for="npass"></label>new password:</label><br>
+                <input type="password" id="kutty123" name="newpassword"pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required> <br>
+                <label for="conpasswrd">conform password:</label><br>
+         <input type="password" value="FakePSW" id="myInput"><br><br>
+<input type="checkbox" onclick="myFunction()">Show Password
+
+                    
+
+                <input type="checkbox" id="box" name="box" ><br>
+                <label for="checkbox"></label>I accept the terms and condition</label><br><br>
+                
+  
+            <input type="submit" value="Submit">
+          </form> 
+
+
+    </body>
+</html>
